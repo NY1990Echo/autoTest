@@ -34,8 +34,8 @@
         "content-type": "application/json"
       },
       "json": {
-        "name": "hi",
-        "age": "3"
+        "name": "niyang",
+        "age": "30"
       }
     },
     "response": {

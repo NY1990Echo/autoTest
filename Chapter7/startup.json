@@ -1,0 +1,93 @@
+[
+  {
+    "description": "第一个mockdemo",
+    "request": {
+      "uri": "/demo"
+    },
+    "response": {
+      "text": "第一个mock响应"
+    }
+  },
+  {
+    "description": "模拟一个没有参数的get请求",
+    "request": {
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个没有参数的get请求"
+    }
+  },
+  {
+    "description": "模拟一个带参数的get请求",
+    "request": {
+      "uri": "/getWithParamDemo",
+      "method": "get",
+      "queries": {
+        "name": "huhansan",
+        "age": "18"
+      }
+    },
+    "response": {
+      "text": "我胡汉三又回来了！！！！！"
+    }
+  },
+  {
+    "description": "模拟一个post请求",
+    "request": {
+      "uri":"/postDemo",
+      "method":"post"
+    },
+    "response": {
+      "text": "这是我的第一个mock的post请求"
+    }
+  },
+  {
+    "description": "模拟一个带参数的post请求",
+    "request": {
+      "uri": "/postWithParamDemo",
+      "method": "post",
+      "forms": {
+        "name": "huhansan",
+        "sex": "male"
+      }
+    },
+    "response": {
+      "text": "我胡汉三带着参数来了!!!"
+    }
+  },
+  {
+    "description": "模拟一个带cookie的get请求",
+    "request": {
+      "uri": "/getWithCookie",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "这是带cookie的get请求"
+    }
+  },
+  {
+    "description": "模拟一个带cookie的post请求",
+    "request": {
+      "uri": "/postWithCookie",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "huhansan",
+        "sex": "male"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "message": "这是带cookie的post请求",
+        "status": "1"
+      }
+    }
+  }
+]
